@@ -2,10 +2,14 @@ package day2_asmt;
 
 import java.util.Scanner;
 
-public class taxCalculationTest {
+public class TaxCalculationTest {
 
 	public static void main(String[] args) {
-		taxCalculation t=new taxCalculation();
+		
+		//Create the object for TaxCalculation Class
+		TaxCalculation t=new TaxCalculation();
+		
+		//Get input from users
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter Your Gross Salary");
 		int grossSalary=s.nextInt();

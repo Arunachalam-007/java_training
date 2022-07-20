@@ -1,9 +1,11 @@
 package day2_asmt;
 
-public class userMgmtTest {
+public class UserMgmtTest {
 
 	public static void main(String[] args) {
-		userMgmt u=new userMgmt();
+		
+		//Create the object or instancevariable for UserMgmt Class
+		UserMgmt u=new UserMgmt();
 		u.calc();
 
 	}
