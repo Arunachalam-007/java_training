@@ -6,6 +6,7 @@ public class AttendanceTest {
 		
 		//To create the object or instance variable for Attendance class
 		Attendance am=new Attendance();
+		
 		am.calculation();
 
 	}
