@@ -1,17 +1,24 @@
 package day3_practice;
 
+import java.util.Scanner;
+
 public class ReversePyramid {
+	//Non Return type Method
 	public void pyramidPattern() {
-		int rows = 4; 
-		for (int i = 1; i <= rows; i++){
-		for (int j = 1; j < i; j++){
-				System.out.print("1 ");
-			}
-		for (int j = i; j <= rows; j++){
-				System.out.print("");
-			}
-			System.out.println();
-		}
+		Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of rows: ");     //Get input from user    
+        int rows = sc.nextInt();         
+        for (int i = rows; i>=1; i--) {
+            for (int j = 1; j <= i; j++){
+                if(j%2 == 0){ //to check if the j value is even
+                    System.out.print(0);
+                }
+                else{
+                    System.out.print(1);
+                }
+            }       
+            System.out.println();
+        }
 	}
 			
 	}

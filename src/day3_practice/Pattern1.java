@@ -1,6 +1,7 @@
 package day3_practice;
 
 public class Pattern1 {
+	//Non Return type Method
 	public void patternPrint() {
 		int row=5,i,j;
 		for(i=0;i<row;i++) {

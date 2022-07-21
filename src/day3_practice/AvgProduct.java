@@ -3,23 +3,35 @@ package day3_practice;
 import java.util.Scanner;
 
 public class AvgProduct {
-	int avg,res,res1;
-	public void calc() {
-		
-		String option="n";
-		Scanner in=new Scanner(System.in);
-		
-		
-		while(!option.equals("q")) {
-			System.out.println("Enter integer value");
-			int value=in.nextInt();
-			System.out.println("Enter q to quit");
-			option=in.next();
-			res1=value*res1;
-			System.out.println("Product"+res1);
-		}
-		System.out.println("Outside");
-		
-	}
+	
+	//Data members
+    int sum = 0,count=0,product=1;
+    char msg = 'a';
+    
+    //Calculation process
+    public void calc() {
+        Scanner s = new Scanner(System.in);
+        
+        while(msg != 'q') {  //if the user input is q then it will quit
+            System.out.println("Enter a number :");
+            int number = s.nextInt();
+            
+            //product calculation
+            sum += number; 
+            count += 1; 
+            product *= number; 
+            
+            System.out.println("if you want to quite enter 'q'");
+            msg = s.next().charAt(0);
+            }
+            System.out.println("Product :" + product);
+        }
+    
+    //Average Calculation
+    public void avgCalc() {
+        int average = sum/count;
+        System.out.println("Average :" +average);
+        
+    }
 
 }
