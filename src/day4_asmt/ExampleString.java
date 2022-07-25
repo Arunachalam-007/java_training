@@ -23,6 +23,8 @@ public class ExampleString {
 		for(char c='1';c<='9';c++) {
 			System.out.println("c :"+c);
 		}
+		String a=2+"      "+3;
+		System.out.println("a :"+a);
 			}
 
 }
