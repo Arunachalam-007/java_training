@@ -1,5 +1,6 @@
 package overloading_asmt;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TodoTest {
@@ -33,17 +34,24 @@ public class TodoTest {
 
 		 System.out.println("Enter No of Tasks");
 	        int n = in.nextInt();
-	        String arr[] = new String[n];
+	        
+	        ArrayList al=new ArrayList(n);
+//	        String arr[] = new String[n];
 	        for(int j=0;j<n;j++)
 	        {
 	            System.out.println("Enter the Task");
-	            arr[j]=in.next();
+	            String s=in.next();
+	            al.add(j, s);
+//	            arr[j]=in.next();
 	        }
 	        System.out.println("ToDo are :");
 	        
-	        for (String values : arr) {
-	            System.out.println(values);
-	        }
+	        for (Object object : al) {
+				System.out.println(object);
+			}
+//	        for (String values : arr) {
+//	            System.out.println(values);
+//	        }
 			
 		
 		

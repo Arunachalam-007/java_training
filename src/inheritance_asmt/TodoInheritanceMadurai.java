@@ -1,5 +1,6 @@
 package inheritance_asmt;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TodoInheritanceMadurai {
@@ -13,18 +14,20 @@ public class TodoInheritanceMadurai {
 			Scanner in=new Scanner(System.in);
 			System.out.println("id :"+id+" "+" location :"+location);
 			System.out.println("Enter No of Tasks");
-		     int n = in.nextInt();
-		     String arr[] = new String[n];
-		     for(int j=0;j<n;j++)
-		     {
-		         System.out.println("Enter the Task");
-		         arr[j]=in.next();
-		     }
-		     System.out.println("ToDo are :");
-		     
-		     for (String values : arr) {
-		         System.out.println(values);
-		     }
+	        int n = in.nextInt();
+	        
+	        ArrayList al=new ArrayList(n);
+	        for(int j=0;j<n;j++)
+	        {
+	            System.out.println("Enter the Task");
+	            String s=in.next();
+	            al.add(j, s);
+	        }
+	        System.out.println("ToDo are :");
+	        
+	        for (Object object : al) {
+				System.out.println(object);
+			}
 			
 		}
 		else {
