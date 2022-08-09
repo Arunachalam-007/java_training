@@ -136,7 +136,7 @@ public class FileOperations {
 	                System.out.println("Successfully Moved");
 	            }
 	            else {
-	                System.out.println("The file is can't be moved");
+	                System.out.println("The file can't be moved");
 	            }
 	        }
 	        catch (Exception e) {

@@ -1,6 +1,6 @@
 package com.chainsys.thread;
 
-import java.util.Scanner;
+
 
 public class ThreadsInterface implements Runnable {
 
